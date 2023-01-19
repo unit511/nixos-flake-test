@@ -11,7 +11,7 @@
       ./hardware-configuration.nix
       ./boot.nix
       ./networking.nix
-      ./virtualization.nix
+      #./virtualization.nix
       ./home.nix
     ];
   
