@@ -3,7 +3,7 @@
 {
 
   networking = {
-    hostName = "x555l-nixos-flake";
+    hostName = "nixos-flake-test";
     networkmanager.enable = true;
     firewall = { 
       enable = true;
