@@ -19,7 +19,7 @@
   
   system.autoUpgrade = {
     enable = true;
-    channel = "https://nixos.org/channels/nixos-unstable";
+    flake = "github:unit511/nixos-flake-test#test-config";
   };
 
   time.timeZone = "Europe/Budapest";
