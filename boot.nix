@@ -29,6 +29,12 @@
       themePackages = [ pkgs.adi1090x-plymouth ];
       theme = "lone";
     };
+
+    # Prevents splashscreen from showing during switch
+    systemd.services.plymouth-start.restartIfChanged = false;
+
+    # Prevents plymouth-quit-wait hanging during switch
+    systemd.services.plymouth-quit-wait.restartIfChanged = false;
   };
     
 }
